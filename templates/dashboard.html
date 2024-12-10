@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Panel de Administración{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Panel de Administración</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Usuarios</h5>
+                    <p class="card-text">Gestionar usuarios del sistema</p>
+                    <a href="/admin/users" class="btn btn-primary">Ver Usuarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Roles</h5>
+                    <p class="card-text">Gestionar roles y permisos</p>
+                    <a href="/admin/roles" class="btn btn-primary">Ver Roles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Logs</h5>
+                    <p class="card-text">Ver registros del sistema</p>
+                    <a href="/admin/logs" class="btn btn-primary">Ver Logs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
